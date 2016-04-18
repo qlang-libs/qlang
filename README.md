@@ -76,7 +76,7 @@ git clone https://github.com/qiniu/text.git qiniupkg.com/text
 
 		```go
 		import "types"
-		slice = types.NewSlice("int")	
+		slice = new types.Slice("int")	
 		slice.push(1).push(2)
 		println(slice.pop()) 
 		// Outputs: 2
