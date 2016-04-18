@@ -10,12 +10,10 @@ A dynamic programming language built for golang.
 [qlang-libs](https://github.com/qlang-libs) contains a series of qlang packages to make our life easier.
 
 ### Install
-Use [Focinfi/qlang](https://github.com/Focinfi/qlang) version which fixed some bugs.
-
 1. qlang setup
 ```shell
 cd $GOPATH/src
-git clone https://github.com/Focinfi/qlang.git qlang.io
+git clone https://github.com/qiniu/qlang.git qlang.io
 git clone https://github.com/qiniu/text.git qiniupkg.com/text
 ```
 
@@ -33,6 +31,7 @@ git clone https://github.com/qiniu/text.git qiniupkg.com/text
 	import (
 		"io/ioutil"
 		"log"
+		"os"
 
 		"qlang.io/qlang.v2/qlang"
 		qall "qlang.io/qlang/qlang.all"
@@ -41,6 +40,7 @@ git clone https://github.com/qiniu/text.git qiniupkg.com/text
 	func main() {
 		qall.InitSafe(false)
 		lang, err := qlang.New(qlang.InsertSemis)
+		lang.SetLibs(os.Getenv("QLANG_PATH"))
 		if err != nil {
 			log.Panicln(err)
 			return
