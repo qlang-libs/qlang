@@ -2,7 +2,7 @@
 
 A dynamic programming language built for golang.
 
-[qlang official repository(Chinese)](https://github.com/qiniu/qlang), English document is coming soon -:)
+[qlang official repository(Chinese)](https://github.com/qiniu/qlang), English document is coming soon :-)
 
 
 ## qlang-libs
@@ -11,13 +11,15 @@ A dynamic programming language built for golang.
 
 ### Install
 1. qlang setup
-```shell
-cd $GOPATH/src
-git clone https://github.com/qiniu/qlang.git qlang.io
-git clone https://github.com/qiniu/text.git qiniupkg.com/text
-```
+	```shell
+	cd $GOPATH/src
+	mkdir qiniupkg.com
+	git clone https://github.com/qiniu/qlang.git qlang.io
+	git clone https://github.com/qiniu/text.git qiniupkg.com/text
+	```
 
 2. set qlang packages path env
+
 	Add `export QLANG_PATH="$GOPATH/src/github.com/qlang-libs"` into `~/.bashrc` or `~/.zshrc`
 
 	Although we recommend you to export `QLANG_PATH` to `$GOPATH/src/github.com/qlang-libs`, you can use any directory as your qlang packages directory, what the most important thing is that put all qlang packages into `$QLANG_PATH`.
