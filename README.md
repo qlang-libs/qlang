@@ -41,12 +41,8 @@ A dynamic programming language built for golang.
 
 	func main() {
 		qall.InitSafe(false)
-		lang, err := qlang.New(qlang.InsertSemis)
+		lang := qlang.New()
 		lang.SetLibs(os.Getenv("QLANG_PATH"))
-		if err != nil {
-			log.Panicln(err)
-			return
-		}
 
 		// qlang source file path
 		filePath := "play.ql"
