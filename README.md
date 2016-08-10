@@ -68,6 +68,7 @@ A dynamic programming language built for golang.
 		```shell
 		cd $QLANG_PATH
 		git clone https://github.com/qlang-libs/types
+		git clone https://github.com/qlang-libs/expectations
 		```
 
 	2. Create `play.ql` file
